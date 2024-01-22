@@ -1,0 +1,54 @@
+body{
+    /*
+    background: #1e5799; /* Old browsers 
+    background: -moz-linear-gradient(-45deg, #1e5799 10%, #2989d8 50%, #207cca 51%, #7db9e8 1500px); /* FF3.6-15 
+    background: -webkit-linear-gradient(-45deg, #1e5799 10%,#2989d8 50%,#207cca 51%,#7db9e8 1500px); /* Chrome10-25,Safari5.1-6 
+    background: linear-gradient(135deg, #1e5799 10%,#2989d8 50%,#207cca 51%,#7db9e8 1500px);       
+    */
+    background: rgb(21,10,214);
+    background: linear-gradient(0deg, rgba(21,10,214,1) 18%, rgba(43,43,179,1) 25%, rgba(0,212,255,1) 100%); 
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    /*
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.25, rgb(122, 255, 222)),
+        color-stop(0.63, rgb(173, 169, 169)),
+        color-stop(0.82, rgb(130, 194, 255))
+            );   
+    */
+}
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.maintitle{
+    background: lightblue;
+    align-self: center;
+    align-content: center;
+    width: 75%;
+    height: fit-content;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.boxTitle{
+    color: black;
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 32px, rgba(136, 188, 247, 0.49) 32px, rgba(136, 188, 247, 0.49) 64px);
+    background-color: rgba(137, 214, 245, 0.82);
+    width: 100%;
+    height: fit-content;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    
+}    
