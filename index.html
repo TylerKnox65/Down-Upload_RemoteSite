@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-Allow: <http-methods>
 
 <html lang="en">
   <head>
@@ -10,6 +9,11 @@ Allow: <http-methods>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <script>
+    window.onload = function() {            
+        document.getElementById('getfile').style.display = 'none';
+    }
+    </script>
     <script src="index.js"></script>
 	<div>
         <div class="boxTitle"><p class="maintitle">Upload/Download</p></div>
@@ -31,18 +35,21 @@ Allow: <http-methods>
   </div>
   
   <div class="form-popup" id="myForm">
-    <form class="form-container" method="post" id="login-form">
+    <form class="form-container" method="post" id="login-form" onsubmit="return getValue('user','psw')">
       <h1>Login</h1>
   
-      <label for="email"><b>Username</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+      <label for="user"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="user" id="user" required>
   
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+      <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
   
-      <button id="submitButton" type="button" class="btn">Login</button>
+      <button id="submitButton" type="submit" class="btn">Login</button>
       <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
     </form>
+  </div>
+  <div id="getfile" class="fileget">
+    <button class="button button1" type="button">Click to upload file</button>
   </div>
   </body>
 </html>
